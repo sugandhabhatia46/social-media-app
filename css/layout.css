@@ -1,11 +1,455 @@
-body {
-  margin: 0px;
-  padding: 0px;
+@import url('https://fonts.googleapis.com/css2?family=Glory:wght@200&family=Lato:wght@300&family=Space+Grotesk&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Lato' sans-serif;
 }
 
-.wrapper {
-  width: 100vw;
+html {
+  scroll-behavior: smooth;
+}
+
+.max-width {
+  max-width: 1500px;
+  padding: 0 80px;
+  margin: auto;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.navbar {
   height: 100vh;
-  overflow: hidden;
-  background-color: aqua;
+  width: 20%;
+  background: #ffffff;
+  float: left;
+  /*border: 1px solid #000;*/
+  margin-left: 10px;
+  font-family: sans-serif;
+}
+
+.navbar .logo {
+  height: 60px;
+  width: 100%;
+  /*border: 1px solid black;*/
+  display: block;
+}
+
+.navbar li {
+}
+
+.navbar .logo a {
+  height: 100%;
+  width: 30%;
+  margin: auto;
+  font-size: 35px;
+  font-weight: 600;
+  color: #5594fa;
+  border: 0px solid black;
+}
+
+.navbar .logo a i {
+  text-align: left;
+  padding-left: 10px;
+}
+
+.navbar .list-item {
+  height: 480px;
+  width: 100%;
+}
+
+.navbar .list-item .navbar-item {
+  height: 40px;
+  width: 100%;
+  display: flex;
+  /*border: 1px solid black;*/
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.navbar .list-item .navbar-item a {
+  width: 65%;
+  height: 100%;
+  display: block;
+  padding-top: 12px;
+  justify-content: space-evenly;
+
+  background-color: #fff;
+  border: 0px;
+  color: #3b3b3b;
+}
+
+.navbar .list-item .navbar-item a:hover {
+  background-color: #d1d1d1;
+  border: 1px solid #d1d1d1;
+  border-radius: 20px;
+}
+
+.navbar .list-item .navbar-item a i {
+  text-align: left;
+  padding-left: 15px;
+}
+
+.navbar li {
+  list-style: none;
+}
+
+.navbar .nav-btn {
+  width: 100%;
+  height: 60px;
+  /*border: 1px solid black;*/
+  text-align: center;
+  align-items: center;
+}
+
+.navbar .nav-btn a {
+  width: 60%;
+  height: 100%;
+  padding-top: 18px;
+  display: block;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffffff;
+  background: #5594fa;
+  border: 1px solid #5594fa;
+  border-radius: 25px;
+}
+
+.main-content {
+  /*height: 100vh;*/
+  width: 45%;
+  background: #fff;
+  border: 1px solid #d1d1d1;
+  margin: 0;
+  text-align: center;
+  overflow: scroll;
+}
+
+.main-content .home-row {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  padding-top: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.main-content .home-row .col1 {
+  width: 50%;
+  height: 100%;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.main-content .home-row .col1 h4 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-content .home-row .col2 {
+  width: 50%;
+  height: 100%;
+  text-align: right;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.main-content .add-post-row {
+  width: 100%;
+  height: 120px;
+  border: 1px solid #d1d1d1;
+}
+
+.main-content .add-post-row .text-row {
+  display: flex;
+  width: 100%;
+  padding-top: 5px;
+  height: 60px;
+  margin: 0;
+}
+
+.main-content .add-post-row .text-row .profile-col {
+  width: 10%;
+  height: 100%;
+  padding-left: 5px;
+}
+
+.main-content .add-post-row .text-row .profile-col img {
+  width: 50px;
+  height: 50px;
+  margin-left: 0;
+  border-radius: 50%;
+}
+
+.main-content .add-post-row .text-row .text-col {
+  width: 60%;
+  height: 100%;
+}
+
+.main-content .add-post-row .text-row .text-col input {
+  width: 80%;
+  height: 40px;
+  font-size: 20px;
+  font-weight: 300;
+  border: none;
+}
+
+.main-content .add-post-row .btn-row {
+  display: flex;
+  width: 100%;
+  padding-top: 5px;
+  height: 60px;
+  margin: 0;
+}
+
+.main-content .add-post-row .btn-row .btn-row-col1 {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-left: 60px;
+}
+
+.main-content .add-post-row .btn-row .btn-row-col1 a {
+  width: 20%;
+  height: 70%;
+  color: #5594fa;
+  padding-top: 8px;
+  margin-right: 0;
+  font-size: 15px;
+  font-weight: 300;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+}
+
+.main-content .add-post-row .btn-row .btn-row-col1 a:hover {
+  font-size: 20px;
+  background: #d6efff;
+}
+
+.main-content .add-post-row .btn-row .btn-row-col2 {
+  width: 50%;
+  border: 0px solid black;
+  display: block;
+  align-items: right;
+  justify-content: center;
+}
+
+.main-content .add-post-row .btn-row .btn-row-col2 a {
+  width: 40%;
+  height: 80%;
+  padding-top: 12px;
+  display: block;
+  margin: auto 10px 10px auto;
+  font-size: 15px;
+  font-weight: 600;
+  color: #ffffff;
+  background: #5594fa;
+  border: 1px solid #5594fa;
+  border-radius: 25px;
+}
+
+.main-content .post-feed {
+  width: 100%;
+  height: auto;
+  display: flex;
+  border: 1px solid #d1d1d1;
+}
+
+.main-content .post-feed:hover {
+  background-color: #fafcf7;
+}
+
+.main-content .post-feed .profile-picture-feed {
+  width: 15%;
+  height: 100%;
+  padding-top: 10px;
+}
+
+.main-content .post-feed .profile-picture-feed img {
+  width: 70%;
+  height: 50px;
+  border-radius: 50%;
+  background-color: burlywood;
+}
+
+.main-content .post-feed .post-feed-content {
+  width: 75%;
+  height: 100%;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.main-content .post-feed .post-feed-content .row-1 {
+  text-align: left;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: #3b3b3b;
+}
+
+.main-content .post-feed .post-feed-content .row-1 i {
+  color: #5594fa;
+}
+
+.main-content .post-feed .post-feed-content .row-1 .notBold {
+  font-weight: normal;
+}
+
+.main-content .post-feed .post-feed-content .row-1 p {
+  padding-top: 10px;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.main-content .post-feed .post-feed-content .row-2 img {
+  width: 100%;
+  padding-top: 20px;
+}
+
+.main-content .post-feed .post-feed-content .row-3 {
+  width: 100%;
+  height: 35px;
+  padding-top: 10px;
+  display: flex;
+  margin-left: 0;
+  padding-left: 0;
+  align-items: initial;
+  justify-content: space-around;
+}
+
+.main-content .post-feed .post-feed-content .row-3 i {
+}
+
+.search-content {
+  width: 28%;
+  height: 150vh;
+}
+
+.search-content .search-row {
+  display: flex;
+}
+
+.search-content .search-row button {
+  width: 15%;
+  height: 50px;
+  background: #fafcf7;
+  border: 1px solid #fafcf7;
+  margin: auto 0 0 5px;
+  border-radius: 50%;
+}
+
+.search-content .search-row .search-bar-col {
+  width: 75%;
+  height: 50px;
+  margin: auto 0 0 40px;
+  padding-left: 15px;
+  background: #fafcf7;
+  border: 1px solid #fafcf7;
+  border-radius: 25px;
+  outline: none;
+}
+
+.search-content .top-stories {
+  width: 90%;
+  height: 450px;
+  margin: 10px 0 0 40px;
+  padding-left: 15px;
+  background: #fafcf7;
+  border: 1px solid #fafcf7;
+  border-radius: 15px;
+  font-family: 'Lato' sans-serif;
+}
+
+.search-content .top-stories h2 {
+  padding: 5px 0 10px 5px;
+  color: #3b3b3b;
+}
+
+.search-content .top-stories h4 {
+  padding: 5px 0 5px 5px;
+  color: #3b3b3b;
+}
+
+.search-content .top-stories p {
+  padding: 0 0 5px 5px;
+  color: #3b3b3b;
+}
+
+.search-content .top-stories a {
+  padding: 5px 0 5px 5px;
+  color: #5594fa;
+}
+
+.search-content .who-to-follow {
+  width: 90%;
+  height: 300px;
+  margin: 10px 0 0 40px;
+  padding-left: 15px;
+  background: #fafcf7;
+  border: 1px solid #fafcf7;
+  border-radius: 15px;
+  font-family: 'Lato' sans-serif;
+}
+
+.search-content .who-to-follow h2 {
+  padding: 5px 0 10px 5px;
+  color: #3b3b3b;
+}
+
+.search-content .who-to-follow .follow-row {
+  width: 100%;
+  height: calc(100% / 4);
+  display: flex;
+}
+
+.search-content .who-to-follow .follow-row img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: #d1d1d1;
+}
+
+.search-content .who-to-follow .follow-row .col1 {
+  width: 30%;
+  height: auto;
+}
+
+.search-content .who-to-follow .follow-row p {
+  font-size: 12px;
+  color: #9c9c9c;
+}
+
+.search-content .who-to-follow .follow-row .col2 {
+  width: 40%;
+  height: auto;
+}
+
+.search-content .who-to-follow .follow-row .col3 {
+  width: 30%;
+  height: auto;
+}
+
+.search-content .who-to-follow .follow-row .col3 a {
+  width: 70px;
+  height: 30px;
+  padding-top: 5px;
+  text-align: center;
+  display: block;
+  font-size: 15px;
+  font-weight: 300;
+  color: #fff;
+  background: #3b3b3b;
+  border: 1px solid #3b3b3b;
+  border-radius: 25px;
+}
+
+.search-content .who-to-follow a {
+  padding: 0 0 5px 5px;
+  color: #5594fa;
 }
