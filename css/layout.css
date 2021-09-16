@@ -124,7 +124,7 @@ html {
   /*height: 100vh;*/
   width: 45%;
   background: #fff;
-  border: 1px solid #d1d1d1;
+  border: 1px solid #f2f2f2;
   margin: 0;
   text-align: center;
   overflow: scroll;
@@ -162,7 +162,7 @@ html {
 .main-content .add-post-row {
   width: 100%;
   height: 120px;
-  border: 1px solid #d1d1d1;
+  border: 1px solid #f2f2f2;
 }
 
 .main-content .add-post-row .text-row {
@@ -258,7 +258,7 @@ html {
   width: 100%;
   height: auto;
   display: flex;
-  border: 1px solid #d1d1d1;
+  border: 1px solid #f2f2f2;
 }
 
 .main-content .post-feed:hover {
@@ -323,9 +323,6 @@ html {
   justify-content: space-around;
 }
 
-.main-content .post-feed .post-feed-content .row-3 i {
-}
-
 .search-content {
   width: 28%;
   height: 150vh;
@@ -357,7 +354,7 @@ html {
 
 .search-content .top-stories {
   width: 90%;
-  height: 450px;
+  height: auto;
   margin: 10px 0 0 40px;
   padding-left: 15px;
   background: #fafcf7;
@@ -452,4 +449,25 @@ html {
 .search-content .who-to-follow a {
   padding: 0 0 5px 5px;
   color: #5594fa;
+}
+
+@media (max-width: 1500px) {
+  .max-width {
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 1195px) {
+}
+
+@media (max-width: 991px) {
+}
+
+@media (max-width: 947px) {
+}
+
+@media (max-width: 690px) {
+}
+
+@media (max-width: 500px) {
 }
